@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://sensor.nevada.edu/NRDC/ -->
+<html style="background-image: url(http://sensor.nevada.edu/NRDC/Images/Backgrounds/corey-peak.jpg);">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Nevada Research Data Center</title>
+    
+    <link href="http://sensor.nevada.edu/NRDC/Plugins/Boostrap?v=BtLMbxmAJsvZD3kbaRyZVsXCqikA0WGU3hW5TbVQido1" rel="stylesheet">
+    <link href="./Nevada Research Data Center_files/jQueryUI" rel="stylesheet">
+    <link href="http://sensor.nevada.edu/NRDC/Styles/css?v=6MQBEehVnE9V_w5XWSUTJtJd6dy99MAWKNUH1w02PL01" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./Nevada Research Data Center_files/Index.css">
+
+    <script src="./Nevada Research Data Center_files/jQuery"></script>
+    <script src="./Nevada Research Data Center_files/Bootstrap"></script>
+    <script src="./Nevada Research Data Center_files/jQueryUI"></script>
+    <script src="./Nevada Research Data Center_files/js"></script>
+    <script type="text/javascript">
+      var baseUrl = '/NRDC/';
+    </script>
+    <script src="./Nevada Research Data Center_files/Index.js" type="text/javascript"></script>
+    <script src="./Nevada Research Data Center_files/Contact.js" type="text/javascript"></script>
+
+  </head>
+  <body>
+    <header class="navbar navbar-inverse no-margin hidden-xs">
+      <div class="navbar-inner">
+	<div class="container">
+	  <nav class="pull-left">
+	    <ul class="nav nav-pills">
+	      <li>
+		<a class="nav-text" href="./Nevada Research Data Center_files/Nevada Research Data Center.html" style="font-size: 18px;">NRDC</a>
+	      </li>
+	    </ul>
+	  </nav>
+	  
+	  <nav class="pull-right">
+	    <ul class="nav nav-pills">
+	      <li class="dropdown" style="font-size: 15px;">
+		<a class="dropdown-toggle nav-text" data-toggle="dropdown" href="http://sensor.nevada.edu/NRDC/Data">Data</a>
+		<ul class="dropdown-menu pull-right" style="background-color: #f5f5f5;">
+		  <li><a href="http://sensor.nevada.edu/SENSORDataSearch/" target="_blank">Geospatial Data Search</a></li>
+		  <li><a class="" href="http://sensor.nevada.edu/NRDC/CurrentConditions">Current Conditions</a></li>
+		  <li class="divider"></li>
+		  <li><a class="" href="http://sensor.nevada.edu/NRDC/Data/DataCuration">What is Data Curation?</a></li>
+		  <li class="divider"></li>
+		  <li><a class="" href="http://sensor.nevada.edu/NRDC/Contact/Suggest">Suggest a Dataset</a></li>
+		</ul>
+	      </li>
+	      <li class="dropdown" style="font-size: 15px;">
+		<a class="dropdown-toggle nav-text" data-toggle="dropdown" href="http://sensor.nevada.edu/NRDC/Projects">Projects</a>
+		<ul class="dropdown-menu pull-right" style="background-color: #f5f5f5;">
+		  <li><a href="http://sensor.nevada.edu/Nexus/" target="_blank">Nexus</a></li>
+		  <li><a href="http://sensor.nevada.edu/NCCP/" target="_blank">NevCAN</a></li>
+		  <li><a href="http://sensor.nevada.edu/WalkerBasinHydro/" target="_blank">Walker Basin</a></li>
+		  <li><a href="http://scotttylerhydro.com/current-projects/hydrologic-impacts-of-forest-thinning/" target="_blank">Ashpan</a></li>
+		</ul>
+	      </li>
+	      <li class="dropdown" style="font-size: 15px;">
+		<a class="dropdown-toggle nav-text" data-toggle="dropdown" href="http://sensor.nevada.edu/NRDC/Outreach">Outreach</a>
+		<ul class="dropdown-menu pull-right" style="background-color: #f5f5f5;">
+		  <li><a class="" href="http://sensor.nevada.edu/NRDC/Outreach/STEMBOPS">STEMBOPS</a></li>
+		</ul>
+	      </li>
+	      <li class="dropdown" style="font-size: 15px;">
+		<a class="dropdown-toggle nav-text" data-toggle="dropdown" href="http://sensor.nevada.edu/NRDC/Resources">Resources</a>
+		<ul class="dropdown-menu pull-right" style="background-color: #f5f5f5;">
+		  <li><a class="" href="http://sensor.nevada.edu/NRDC/Gallery/Images">Image Gallery</a></li>
+		</ul>
+	      </li>
+	      <li class="dropdown" style="font-size: 15px;">
+		<a class="dropdown-toggle nav-text" data-toggle="dropdown" href="http://sensor.nevada.edu/NRDC/Services">Services</a>
+		<ul class="dropdown-menu pull-right" style="background-color: #f5f5f5;">
+		  <li><a class="" href="http://sensor.nevada.edu/NRDC/Contact/AboutUs">About Us</a></li>
+		  <li class="divider"></li>
+		  <li><a class="" href="http://sensor.nevada.edu/NRDC/Services/CUAHSI">CUAHSI</a></li>
+		  <li><a class="" href="http://sensor.nevada.edu/NRDC/Services/DataONE">DataONE</a></li>
+		  <li class="divider"></li>
+		  <li><a class="" href="http://sensor.nevada.edu/NRDC/Contact/Suggest">Suggest a Dataset</a></li>
+		  <li><a class="" href="http://sensor.nevada.edu/NRDC/Contact/ContactUs">Contact Us</a></li>
+		</ul>
+	      </li>
+
+	      <li class="dropdown">
+		<a href="http://sensor.nevada.edu/NRDC/#" class="dropdown-toggle nav-text" data-toggle="dropdown"><span id="searchBtn" class="glyphicon glyphicon-search"></span></a>
+		<ul class="dropdown-menu pull-right">
+		  <li>
+		    <form>
+		      <div>
+			<input id="searchField" class="btn" type="text" placeholder="Search" style="display: inline-block;" disabled="">
+			<button class="btn btn-default" style="display: inline-block;" disabled="">Search</button>
+		      </div>
+		    </form>
+		  </li>
+		</ul>
+	      </li>
+	    </ul>
+	  </nav>
+	</div>
+      </div>
+    </header>
+
+    <header class="fixed-nav-menu visible-xs in" style="left: -271px; height: 4px;">
+      <ul class="fixed-nav-menu-content">
+	<li class="fixed-nav-menu-item"><a href="./Nevada Research Data Center_files/Nevada Research Data Center.html">NRDC</a></li>
+	<li>
+	  <span>Data</span>
+	  <ul>
+	    <li class="fixed-nav-menu-item"><a href="http://sensor.nevada.edu/SENSORDataSearch/">Geospatial Data Search</a></li>
+	    <li class="fixed-nav-menu-item"><a class="" href="http://sensor.nevada.edu/NRDC/CurrentConditions">Current Conditions</a></li>
+	    <li class="fixed-nav-menu-item"><a class="" href="http://sensor.nevada.edu/NRDC/Data/DataCuration">What is Data Curation?</a></li>
+	    <li class="fixed-nav-menu-item"><a class="" href="http://sensor.nevada.edu/NRDC/Contact/Suggest">Suggest a Dataset</a></li>
+	  </ul>
+	</li>
+	<li>
+	  <span>Projects</span>
+	  <ul>
+	    <li class="fixed-nav-menu-item"><a href="http://sensor.nevada.edu/Nexus/">Nexus</a></li>
+	    <li class="fixed-nav-menu-item"><a href="http://sensor.nevada.edu/NCCP/">NevCAN</a></li>
+	    <li class="fixed-nav-menu-item"><a href="http://sensor.nevada.edu/WalkerBasinHydro/">Walker Basin</a></li>
+	    <li class="fixed-nav-menu-item"><a href="http://scotttylerhydro.com/current-projects/hydrologic-impacts-of-forest-thinning/">Ashpan</a></li>
+	  </ul>
+	</li>
+	<li>
+	  <span>Outreach</span>
+	  <ul>
+	    <li class="fixed-nav-menu-item"><a class="" href="http://sensor.nevada.edu/NRDC/Outreach/STEMBOPS">STEMBOPS</a></li>
+	  </ul>
+	</li>
+	<li>
+	  <span>Resources</span>
+	  <ul>
+	    <li class="fixed-nav-menu-item"><a class="" href="http://sensor.nevada.edu/NRDC/Gallery/Images">Image Gallery</a></li>
+	  </ul>
+	</li>
+	<li>
+	  <span>Services</span>
+	  <ul>
+	    <li class="fixed-nav-menu-item"><a class="" href="http://sensor.nevada.edu/NRDC/Contact/AboutUs">About Us</a></li>
+	    <li class="fixed-nav-menu-item"><a class="" href="http://sensor.nevada.edu/NRDC/Services/CUAHSI">CUAHSI</a></li>
+	    <li class="fixed-nav-menu-item"><a class="" href="http://sensor.nevada.edu/NRDC/Services/DataONE">DataONE</a></li>
+	    <li class="fixed-nav-menu-item"><a class="" href="http://sensor.nevada.edu/NRDC/Contact/Suggest">Suggest a Dataset</a></li>
+	    <li class="fixed-nav-menu-item"><a class="" href="http://sensor.nevada.edu/NRDC/Contact/ContactUs">Contact Us</a></li>
+	  </ul>
+	</li>
+      </ul>
+      <span class="fixed-nav-menu-toggle">Menu</span>
+    </header>
+
+    <div class="main-content container">
+      <h1 class="site-title">
+	<p>Nevada Research Data Center</p>
+	<span class="slogan">Acquire, Curate, and Share Data</span>
+      </h1>
+      <h2 class="mission-statement"></h2>
+
+      <div class="">
+	<div class="container nrdc-home">
+	  <div id="FeaturedProjects" class="nrdc-home-content" style="display: block;">
+	    <h2 class="pull-left">Featured Projects</h2>
+	    <div class="pull-right featured-navigation">
+	      <!-- Place all of the NRDC Home navigation items down here -->
+	      <nav class="navbar">
+		<ul class="nav nav-pills">
+		  <li><a class="featured-content-link selected-featured-content" data-id="#Nexus">1</a></li>
+		  <li><a class="featured-content-link " data-id="#NevCAN">2</a></li>
+		  <li><a class="featured-content-link " data-id="#WalkerBasin">3</a></li>
+		  <li><a class="featured-content-link " data-id="#Ashpan">4</a></li>
+		</ul>
+	      </nav>
+	    </div>
+
+	    <section>
+	      <div class="featured-projects">
+		<div class="featured-content">
+		  <!-- Pick a random item from the jumbotron navigation and put it up here -->
+		  <div id="Nexus" style="display: block;">
+		    <h3><a href="http://sensor.nevada.edu/Nexus/" target="_blank">Nexus Project</a></h3>
+		    <img src="./Nevada Research Data Center_files/nexus-logo.gif" data-src="Images/Projects/nexus-logo.gif" class="featured-thumbnail">
+		    <div class="featured-description">
+		      <p>
+			The mission of Nevada’s proposed Track-1 project is to advance knowledge and discovery through research on solar
+			energy generation, its environmental impacts, and associated water issues and accelerate this research by developing new
+			capabilities in cyber-infrastructure. Benefits include diversifying Nevada’s economy, building its workforce, and
+			developing innovative approaches to STEM education.
+		      </p>
+		    </div>
+
+		    <div class="funding-source">
+		    </div>
+		  </div>
+		
+		  <div id="NevCAN" style="display: none;">
+		    <h3><a href="http://sensor.nevada.edu/NCCP/" target="_blank">NevCAN</a></h3>
+		    <img src="./Nevada Research Data Center_files/ajax-loader.gif" data-src="Images/Projects/nevcan-pic.jpg" class="featured-thumbnail lazy-load">
+
+		    <div class="featured-description">
+		      <p>
+			NevCAN is a network of sites dedicated to the monitoring and recording of climate conditions in some
+			of the most remote places in Nevada.  The transects setup at each of these sites have a variety
+			of sensors such as air temperature and humidity, imagery, precipitation, soil moisture, and tree sap flow.
+			In addition, several efforts have been pursued in improving climate change education as well as
+			climate modeling.
+		      </p>
+		    </div>
+		    
+		    <div class="funding-source">
+		    </div>
+		  </div>
+		  <div id="WalkerBasin" style="display: none;">
+		    <h3><a href="http://sensor.nevada.edu/WalkerBasinHydro/" target="_blank">Walker Basin Project</a></h3>
+		    
+		    <img src="./Nevada Research Data Center_files/ajax-loader.gif" data-src="Images/Projects/walker-basin.jpg" class="featured-thumbnail lazy-load">
+
+		    <div class="featured-description">
+		      <p>
+			Climate in the Walker Basin has had tremendous impact on past landscapes in terms of snow
+			cover, river flow, lake levels, and vegetation coverage. In modern times, many people,
+			livelihoods, and human activities are affected by conditions such as extended drought. Planning
+			decisions are made by ranchers, farmers, local communities, and federal agencies in response
+			to prevailing climate conditions. Understanding how climate and water supply varies in the
+			Walker Basin and how it can affect the landscape geographically can assist operational long-term
+			decision making.
+		      </p>
+		      
+		      <p>
+			This project seeks to improve the quality and quantity of past and present climate data in the Basin
+			through various methods involving sensors, surveys, and analysis.
+		      </p>
+		    </div>
+		    
+		    <div class="funding-source">
+		    </div>
+		  </div>
+		  <div id="Ashpan" style="display: none;">
+		    <h3><a href="http://scotttylerhydro.com/current-projects/hydrologic-impacts-of-forest-thinning/" target="_blank">Ashpan</a></h3>
+		    
+		    <img src="./Nevada Research Data Center_files/ajax-loader.gif" data-src="Images/Projects/ashpan-pic.jpg" class="featured-thumbnail lazy-load">
+		    
+		    <div class="featured-description">
+		      <p>
+			The Ashpan Project is a study to measure the impacts of various forest management practices on the hydrology.
+			Located in Lassen National Forest, there are several sites that contain a group of meteorological and hydraulic
+			sensors measuring a variety of properties.  The purpose of this study is to better understand the effects of
+			various forest management practices on forest hydrology, in particular,  the impact on snow pack accumulation
+			and melt timing.  The desired outcome of this project is to better understand the effects of particular forest
+			management practices on forest hydrology.
+		      </p>
+		    </div>
+		    
+		    <div class="funding-source">
+		    </div>
+		  </div>
+		</div>
+	      </div>
+	    </section>
+
+	  </div>
+	  
+	  <div id="WhatIsDataCuration" class="nrdc-home-content">
+	    <h2>What is Data Curation?</h2>
+	    <section>
+	      <p>
+		Data sets, both large and small, require active, on-going efforts to maintain their integrity as well as their availability.
+		Data curation is the process involved in preserving research data for as long as it remains relevant and needed.
+		There are numerous ways in which this goal can be achieved, but there are some basic principles that exist.
+		These principles are:
+	      </p>
+	      <ul>
+		<li>Store and Archive the Data</li>
+		<li>Allow for Data Discovery and Retrieval</li>
+		<li>Extract and Store Metadata</li>
+		<li>Migrate Data to usable Data Formats</li>
+	      </ul>
+	      More information can be found <a href="https://www.ideals.illinois.edu/handle/2142/3493" target="_blank">here.</a>
+	    </section>
+	  </div>
+	  
+	  <div id="ServicesOffered" class="nrdc-home-content">
+	    <h2>Services Offered</h2>
+	    <section>
+	      <p>
+		There are several services related to data curation and dissemination that we offer.
+		<a href="http://sensor.nevada.edu/NRDC/Services/CUAHSI">CUAHSI</a> and <a href="http://sensor.nevada.edu/NRDC/Services/DataONE">DataOne</a> are two of the largest efforts in the field of data discovery, and
+		we can provide interfaces to those organizations for both new and existing data sets.
+	      </p>
+	      <p>
+		In addition, we offer our own data services that can be tailored to your data set, if we do not already possess
+		the ability to what you want.
+	      </p>
+	    </section>
+	  </div>
+	  
+	  <div id="SuggestADataSet" class="nrdc-home-content">
+	    <h2>Suggest a Data Set</h2>
+	    <section>
+	      <p>
+		The Nevada Research Data Center is continually on the look out for new datasets to acquire and host, with the permission of their
+		respective owners.  If you have a dataset that you wish to make available for use by outside research efforts, or if you wish for the NRDC to
+		accommodate your data in a meaningful way tailored to your needs, please fill out this form below:
+	      </p>
+	      
+	      <div>
+		<p>
+		  Your Email: <input id="userEmail" type="text">
+		</p>
+		<input id="topic" type="hidden" value="dataset">
+		<p id="descriptionTitle">Brief Description of the Datasets:</p>
+		<p>
+		  <textarea id="description" rows="8" style="width: 400px;"></textarea>
+		</p>
+		<p>
+		  <button id="emailBtn" type="button">Submit Suggestion</button>
+		</p>
+		<p id="emailSuccessful" style="display: none; color: rgb(0, 51, 102)">
+		  Your informaiton has been submitted and an email has been sent to the administrators.  We should be in contact with you
+		  in the next few days.  Thank you for your email!
+		</p>
+		<p id="emailError" style="display: none; color: red;">
+		  There was an error sending the email to our administrators.  Please try again later, or email us directly at
+		  <a href="mailto:foo@bar.com">foo@bar.com</a>
+		</p>
+	      </div>
+	    </section>
+	  </div>
+	</div>
+	<div class="nrdc-home-navigation row hidden-xs">
+	  <div class="nrdc-home-tab col-xs-3 selected-nrdc-home-tab" data-select="FeaturedProjects">
+	    Featured Projects
+	  </div>
+	  <div class="nrdc-home-tab col-xs-3" data-select="WhatIsDataCuration">
+	    What is Data Curation?
+	  </div>
+	  <div class="nrdc-home-tab col-xs-3" data-select="ServicesOffered">
+	    Services Offered
+	  </div>
+	  <div class="nrdc-home-tab col-xs-3" data-select="SuggestADataSet">
+	    Suggest A Data Set
+	  </div>
+	</div>
+      </div>
+    </div>
+    
+    <footer class="container">
+      <div class="pull-left">
+	<span>Hosted by the University of Nevada, Reno</span>
+      </div>
+      <div class="pull-right hidden-xs">
+	<a id="siteMap" href="http://sensor.nevada.edu/NRDC/#">Site Map</a>
+	
+	<div id="siteMapMenu" class="site-map-menu">
+	  <ul>
+	    <li class="site-map-item"><a class="nav-text" href="./Nevada Research Data Center_files/Nevada Research Data Center.html">NRDC</a></li>
+	    <li class="site-map-item">
+	      <span>Data</span>
+	      <ul>
+		<li class="site-map-item"><a href="http://sensor.nevada.edu/SENSORDataSearch/">Geospatial Data Search</a></li>
+		<li class="site-map-item"><a class="" href="http://sensor.nevada.edu/NRDC/CurrentConditions">Current Conditions</a></li>
+		<li class="site-map-item"><a class="" href="http://sensor.nevada.edu/NRDC/Data/DataCuration">What is Data Curation?</a></li>
+		<li class="site-map-item"><a class="" href="http://sensor.nevada.edu/NRDC/Contact/Suggest">Suggest a Dataset</a></li>
+	      </ul>
+	    </li>
+	    <li class="site-map-item">
+	      <span>Projects</span>
+	      <ul>
+		<li class="site-map-item"><a href="http://sensor.nevada.edu/Nexus/">Nexus</a></li>
+		<li class="site-map-item"><a href="http://sensor.nevada.edu/NCCP/">NevCAN</a></li>
+		<li class="site-map-item"><a href="http://sensor.nevada.edu/WalkerBasinHydro/">Walker Basin</a></li>
+		<li class="site-map-item"><a href="http://scotttylerhydro.com/current-projects/hydrologic-impacts-of-forest-thinning/">Ashpan</a></li>
+	      </ul>
+	    </li>
+	    <li class="site-map-item">
+	      <span>Outreach</span>
+	      <ul>
+		<li class="site-map-item"><a class="" href="http://sensor.nevada.edu/NRDC/Outreach/STEMBOPS">STEMBOPS</a></li>
+	      </ul>
+	    </li>
+	    <li class="site-map-item">
+	      <span>Resources</span>
+	      <ul>
+		<li class="site-map-item"><a class="" href="http://sensor.nevada.edu/NRDC/Gallery/Images">Image Gallery</a></li>
+	      </ul>
+	    </li>
+	    <li class="site-map-item">
+	      <span>Services</span>
+	      <ul>
+		<li class="site-map-item"><a class="" href="http://sensor.nevada.edu/NRDC/Contact/AboutUs">About Us</a></li>
+		<li class="site-map-item"><a class="" href="http://sensor.nevada.edu/NRDC/Services/CUAHSI">CUAHSI</a></li>
+		<li class="site-map-item"><a class="" href="http://sensor.nevada.edu/NRDC/Services/DataONE">DataONE</a></li>
+		<li class="site-map-item"><a class="" href="http://sensor.nevada.edu/NRDC/Contact/Suggest">Suggest a Dataset</a></li>
+		<li class="site-map-item"><a class="" href="http://sensor.nevada.edu/NRDC/Contact/ContactUs">Contact Us</a></li>
+	      </ul>
+	    </li>
+	  </ul>
+	</div>
+      </div>
+    </footer>
+  </body>
+</html>
