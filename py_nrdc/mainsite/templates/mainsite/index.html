@@ -1,6 +1,6 @@
+{% load staticfiles %}
 <!DOCTYPE html>
-<!-- saved from url=(0030)http://sensor.nevada.edu/NRDC/ -->
-<html style="background-image: url(http://sensor.nevada.edu/NRDC/Images/Backgrounds/corey-peak.jpg);">
+<html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -8,20 +8,20 @@
 
     <title>Nevada Research Data Center</title>
     
-    <link href="http://sensor.nevada.edu/NRDC/Plugins/Boostrap?v=BtLMbxmAJsvZD3kbaRyZVsXCqikA0WGU3hW5TbVQido1" rel="stylesheet">
-    <link href="./Nevada Research Data Center_files/jQueryUI" rel="stylesheet">
-    <link href="http://sensor.nevada.edu/NRDC/Styles/css?v=6MQBEehVnE9V_w5XWSUTJtJd6dy99MAWKNUH1w02PL01" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./Nevada Research Data Center_files/Index.css">
+    <link href="{% static 'mainsite/bootstrap.css'%}" rel="stylesheet">
+    <link href="{% static 'mainsite/jqueryui.js' %}" rel="stylesheet">
+    <link href="{% static 'mainsite/clear.js' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'mainsite/index.css' %}">
 
-    <script src="./Nevada Research Data Center_files/jQuery"></script>
-    <script src="./Nevada Research Data Center_files/Bootstrap"></script>
-    <script src="./Nevada Research Data Center_files/jQueryUI"></script>
-    <script src="./Nevada Research Data Center_files/js"></script>
+    <script src="{% static 'mainsite/jquery.js' %}"></script>
+    <script src="{% static 'mainsite/bootstrap.js' %}"></script>
+    <script src="{% static 'mainsite/jqueryui.js' %}"></script>
+    <script src="{% static 'mainsite/clear.js' %}"></script>
     <script type="text/javascript">
       var baseUrl = '/NRDC/';
     </script>
-    <script src="./Nevada Research Data Center_files/Index.js" type="text/javascript"></script>
-    <script src="./Nevada Research Data Center_files/Contact.js" type="text/javascript"></script>
+    <script src="{% static 'mainsite/index.js' %}" type="text/javascript"></script>
+    <script src="{% static 'mainsite/contact.js' %}" type="text/javascript"></script>
 
   </head>
   <body>
@@ -31,7 +31,7 @@
 	  <nav class="pull-left">
 	    <ul class="nav nav-pills">
 	      <li>
-		<a class="nav-text" href="./Nevada Research Data Center_files/Nevada Research Data Center.html" style="font-size: 18px;">NRDC</a>
+		<a class="nav-text" href="#" style="font-size: 18px;">NRDC</a>
 	      </li>
 	    </ul>
 	  </nav>
@@ -104,7 +104,7 @@
 
     <header class="fixed-nav-menu visible-xs in" style="left: -271px; height: 4px;">
       <ul class="fixed-nav-menu-content">
-	<li class="fixed-nav-menu-item"><a href="./Nevada Research Data Center_files/Nevada Research Data Center.html">NRDC</a></li>
+	<li class="fixed-nav-menu-item"><a href="#">NRDC</a></li>
 	<li>
 	  <span>Data</span>
 	  <ul>
@@ -178,7 +178,7 @@
 		  <!-- Pick a random item from the jumbotron navigation and put it up here -->
 		  <div id="Nexus" style="display: block;">
 		    <h3><a href="http://sensor.nevada.edu/Nexus/" target="_blank">Nexus Project</a></h3>
-		    <img src="./Nevada Research Data Center_files/nexus-logo.gif" data-src="Images/Projects/nexus-logo.gif" class="featured-thumbnail">
+		    <img src="{% static 'mainsite/nexus-logo.gif' %}" data-src="{% static 'mainsite/nexus-logo.gif' %}" class="featured-thumbnail">
 		    <div class="featured-description">
 		      <p>
 			The mission of Nevada’s proposed Track-1 project is to advance knowledge and discovery through research on solar
@@ -194,7 +194,7 @@
 		
 		  <div id="NevCAN" style="display: none;">
 		    <h3><a href="http://sensor.nevada.edu/NCCP/" target="_blank">NevCAN</a></h3>
-		    <img src="./Nevada Research Data Center_files/ajax-loader.gif" data-src="Images/Projects/nevcan-pic.jpg" class="featured-thumbnail lazy-load">
+		    <img src="{% static 'mainsite/ajax-loader.gif' %}" data-src="Images/Projects/nevcan-pic.jpg" class="featured-thumbnail lazy-load">
 
 		    <div class="featured-description">
 		      <p>
@@ -212,7 +212,7 @@
 		  <div id="WalkerBasin" style="display: none;">
 		    <h3><a href="http://sensor.nevada.edu/WalkerBasinHydro/" target="_blank">Walker Basin Project</a></h3>
 		    
-		    <img src="./Nevada Research Data Center_files/ajax-loader.gif" data-src="Images/Projects/walker-basin.jpg" class="featured-thumbnail lazy-load">
+		    <img src="{% static 'mainsite/ajax-loader.gif' %}" data-src="Images/Projects/walker-basin.jpg" class="featured-thumbnail lazy-load">
 
 		    <div class="featured-description">
 		      <p>
@@ -237,7 +237,7 @@
 		  <div id="Ashpan" style="display: none;">
 		    <h3><a href="http://scotttylerhydro.com/current-projects/hydrologic-impacts-of-forest-thinning/" target="_blank">Ashpan</a></h3>
 		    
-		    <img src="./Nevada Research Data Center_files/ajax-loader.gif" data-src="Images/Projects/ashpan-pic.jpg" class="featured-thumbnail lazy-load">
+		    <img src="{% static 'mainsite/ajax-loader.gif' %}" data-src="Images/Projects/ashpan-pic.jpg" class="featured-thumbnail lazy-load">
 		    
 		    <div class="featured-description">
 		      <p>

@@ -1,0 +1,153 @@
+﻿
+h2 {
+    margin-top: 0px;
+}
+
+.slogan {
+    display: block;
+    clear: both;
+    /*color: rgb(245, 245, 245);*/
+    color: rgb(0, 0, 0);
+    font-size: 80%;
+}
+
+.nrdc-home {
+    height: 100%;
+    
+    /*background-color: rgba(0, 51, 102, 0.8);
+    
+    border-left: 1px solid rgb(245, 245, 245);
+    border-right: 1px solid rgb(245, 245, 245);
+    border-top: 1px solid rgb(245, 245, 245);*/
+
+    background-color: rgba(245, 245, 245, 0.8);
+    
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+   
+    padding: 10px;
+
+    margin-bottom: 0px;
+
+    font-size: 16px;
+    position: relative;
+
+    min-height: 500px;
+}
+
+.nrdc-home-xs {
+    min-height: 0px;
+
+    /*border-bottom: 1px solid rgb(245, 245, 245);*/
+    border-bottom: 1px solid rgb(0, 0, 0);
+
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.container .nrdc-home {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.nrdc-home-content {
+    height: 100%;
+    display: none;
+    border-bottom: none;
+}
+
+.nrdc-home-content-xs {
+    margin-bottom: 30px;
+}
+
+.nrdc-home-tab {
+    height: 100%;
+
+    /*border: 1px solid rgb(245, 245, 245);
+    border-left: 1px solid rgb(245, 245, 245);
+    border-right: 1px solid rgb(245, 245, 245);
+    border-top: 1px solid rgb(245, 245, 245);
+
+    background-color: rgba(0, 51, 102, 0.8);*/
+
+    border: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+
+    background-color: rgba(245, 245, 245, 0.8);
+
+    cursor: hand;
+    cursor: pointer;
+
+    font-size: 20px;
+}
+
+.selected-featured-content {
+    /*background-color: rgb(245, 245, 245);*/
+    background-color: rgba(0, 0, 0, 0.8);
+
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+.selected-nrdc-home-tab {
+    border-top: none;
+}
+
+.nrdc-home-navigation {
+    height: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.welcome {
+    /*color: #f5f5f5;*/
+    color: #000000;
+}
+
+.featured-projects {
+    clear: both;
+}
+
+.navbar-inverse {
+    min-height: 0px;
+}
+
+.featured-navigation {
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+.featured-navigation-container {
+    padding-bottom: 15px;
+}
+
+.featured-thumbnail {
+    height: 200px;
+    width: 200px;
+    float: right;
+    margin: 0px 0px 0px 10px;
+}
+
+.featured-description {
+}
+
+.featured-links {
+}
+
+.featured-content-link {
+    cursor: hand;
+    cursor: pointer;
+}
+
+.featured-navigation > .navbar > .nav > li > a:hover,
+.featured-navigation > .navbar > .nav > li > a:focus {
+    background-color: rgba(0, 51, 102, 0.8);
+
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
